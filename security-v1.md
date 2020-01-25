@@ -1,6 +1,6 @@
 ## Security V1
 
-#### [DIF Security Contexts for Linked Data](https://github.com/decentralized-identity/context)
+#### [View on Github](https://github.com/decentralized-identity/context)
 
 ### Terminology
 
