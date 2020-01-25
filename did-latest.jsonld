@@ -3,6 +3,7 @@
     "dif": "https://identity.foundation/context/did-latest#",
     "usage": "dif:usage",
     "publicKeyHex": "dif:publicKeyHex",
+    "publicKeyPgp": "dif:publicKeyPgp",
     "publicKeyJwk": "dif:publicKeyJwk",
     "crv": "dif:crv",
     "kid": "dif:kid",
@@ -10,7 +11,6 @@
     "x": "dif:x",
     "y": "dif:y",
     "OpenPgpSignature2019": "dif:OpenPgpSignature2019",
-    "OpenPgpVerificationKey2019": "dif:OpenPgpVerificationKey2019",
-    "publicKeyPgp": "dif:publicKeyPgp"
+    "OpenPgpVerificationKey2019": "dif:OpenPgpVerificationKey2019"
   }
 }
