@@ -1,6 +1,6 @@
 {
   "@context": {
-    "dif": "https://identity.foundation/context#",
+    "dif": "https://identity.foundation/context/did-latest#",
     "usage": "dif:usage",
     "publicKeyHex": "dif:publicKeyHex",
     "publicKeyJwk": "dif:publicKeyJwk",
