@@ -1,6 +1,6 @@
-### Security Contexts and Documentation for Linked Data
+#### [DIF Security Contexts for Linked Data](https://github.com/decentralized-identity/context)
 
-This repo allows DIF members to easily correct documentation associated with DIDs and VCs.
+This repo and website are designed to enable the most frictionless experience for developing software that relies on JSON-LD.
 
 ### Terminology
 
