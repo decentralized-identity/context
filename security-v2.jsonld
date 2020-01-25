@@ -5,7 +5,6 @@
     },
     "https://identity.foundation/context/security-v1.jsonld",
     {
-      "sec": "https://identity.foundation/context/security-v2#",
       "AesKeyWrappingKey2019": "sec:AesKeyWrappingKey2019",
       "DeleteKeyOperation": "sec:DeleteKeyOperation",
       "DeriveSecretOperation": "sec:DeriveSecretOperation",

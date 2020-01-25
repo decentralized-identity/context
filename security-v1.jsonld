@@ -3,7 +3,7 @@
     "id": "@id",
     "type": "@type",
     "dc": "http://purl.org/dc/terms/",
-    "sec": "https://identity.foundation/context/security-v1#",
+    "sec": "https://identity.foundation/context/security#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "EcdsaKoblitzSignature2016": "sec:EcdsaKoblitzSignature2016",
     "Ed25519Signature2018": "sec:Ed25519Signature2018",

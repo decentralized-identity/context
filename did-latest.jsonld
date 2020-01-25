@@ -1,16 +1,24 @@
 {
-  "@context": {
-    "dif": "https://identity.foundation/context/did-latest#",
-    "usage": "dif:usage",
-    "publicKeyHex": "dif:publicKeyHex",
-    "publicKeyPgp": "dif:publicKeyPgp",
-    "publicKeyJwk": "dif:publicKeyJwk",
-    "crv": "dif:crv",
-    "kid": "dif:kid",
-    "kty": "dif:kty",
-    "x": "dif:x",
-    "y": "dif:y",
-    "OpenPgpSignature2019": "dif:OpenPgpSignature2019",
-    "OpenPgpVerificationKey2019": "dif:OpenPgpVerificationKey2019"
-  }
+  "@context": [
+    {
+      "@version": 1.1
+    },
+    "https://identity.foundation/context/did-v1.jsonld",
+    {
+      "@context": {
+        "dif": "https://identity.foundation/context/did-latest#",
+        "usage": "dif:usage",
+        "publicKeyHex": "dif:publicKeyHex",
+        "publicKeyPgp": "dif:publicKeyPgp",
+        "publicKeyJwk": "dif:publicKeyJwk",
+        "crv": "dif:crv",
+        "kid": "dif:kid",
+        "kty": "dif:kty",
+        "x": "dif:x",
+        "y": "dif:y",
+        "OpenPgpSignature2019": "dif:OpenPgpSignature2019",
+        "OpenPgpVerificationKey2019": "dif:OpenPgpVerificationKey2019"
+      }
+    }
+  ]
 }
