@@ -6,4 +6,5 @@ module.exports = {
   clearMocks: true,
   coverageDirectory: "coverage",
   testPathIgnorePatterns: ["<rootDir>/tests/__fixtures__/"]
+  // testEnvironment: "node"
 };
