@@ -24,7 +24,7 @@ describe("did:elem", () => {
     });
   });
 
-  describe.only("DIF Context", () => {
+  describe("DIF Context", () => {
     examples.forEach(did => {
       it(did, async () => {
         const { document } = await documentLoader(did, {
