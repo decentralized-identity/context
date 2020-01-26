@@ -7,7 +7,8 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "jest --runInBand"
+    "test": "jest --runInBand",
+    "coverage": "jest --runInBand --coverage"
   },
   "repository": {
     "type": "git",
