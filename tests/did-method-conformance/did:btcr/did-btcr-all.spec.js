@@ -14,7 +14,7 @@ beforeEach(() => {
   canSignAndVerify = require("../../__fixtures__/canSignAndVerify");
 });
 
-describe("did:sov", () => {
+describe("did:btcr", () => {
   describe("Default Context", () => {
     examples.forEach(did => {
       it(did, async () => {
