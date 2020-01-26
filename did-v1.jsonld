@@ -6,7 +6,6 @@
     "dc": "http://purl.org/dc/terms/",
     "schema": "http://schema.org/",
     "sec": "https://identity.foundation/context/security#",
-    "didv": "https://w3id.org/did#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "EcdsaSecp256k1Signature2019": "sec:EcdsaSecp256k1Signature2019",
     "EcdsaSecp256k1VerificationKey2019": "sec:EcdsaSecp256k1VerificationKey2019",
@@ -16,7 +15,7 @@
     "RsaVerificationKey2018": "sec:RsaVerificationKey2018",
     "SchnorrSecp256k1Signature2019": "sec:SchnorrSecp256k1Signature2019",
     "SchnorrSecp256k1VerificationKey2019": "sec:SchnorrSecp256k1VerificationKey2019",
-    "ServiceEndpointProxyService": "didv:ServiceEndpointProxyService",
+    "ServiceEndpointProxyService": "sec:ServiceEndpointProxyService",
     "allowedAction": "sec:allowedAction",
     "assertionMethod": {
       "@id": "sec:assertionMethod",
@@ -121,12 +120,12 @@
       "@type": "xsd:dateTime"
     },
     "service": {
-      "@id": "didv:service",
+      "@id": "sec:service",
       "@type": "@id",
       "@container": "@set"
     },
     "serviceEndpoint": {
-      "@id": "didv:serviceEndpoint",
+      "@id": "sec:serviceEndpoint",
       "@type": "@id"
     },
     "verificationMethod": {
