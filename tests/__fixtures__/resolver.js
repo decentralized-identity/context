@@ -15,7 +15,7 @@ const normalizeDocument = res => {
   const didDoc =
     res.id && res.id.indexOf("did:") === 0 ? res : { ...res.didDocument };
   // hack for BTCR.
-  if (res.methodMetadata) {
+  if (res.methodMetadata && res.methodMetadata.continuation) {
     if (res.methodMetadata.continuation.publicKey) {
       didDoc.publicKey = res.methodMetadata.continuation.publicKey;
     }

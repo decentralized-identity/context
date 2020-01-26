@@ -131,3 +131,18 @@ when it contains a proof field with type `OpenPgpSignature2019`.
   }
 }
 ```
+
+<h4 id="ethereumAddress"><a href="#ethereumAddress">ethereumAddress</a></h4>
+
+An ethereum address...
+
+#### Example:
+
+```json
+{
+  "id": "did:ethr:0xE6Fe788d8ca214A080b0f6aC7F48480b2AEfa9a6#owner",
+  "type": "Secp256k1VerificationKey2018",
+  "ethereumAddress": "0xe6fe788d8ca214a080b0f6ac7f48480b2aefa9a6",
+  "owner": "did:ethr:0xE6Fe788d8ca214A080b0f6aC7F48480b2AEfa9a6"
+}
+```

@@ -14,7 +14,8 @@
         "x": "dif:x",
         "y": "dif:y",
         "OpenPgpSignature2019": "dif:OpenPgpSignature2019",
-        "OpenPgpVerificationKey2019": "dif:OpenPgpVerificationKey2019"
+        "OpenPgpVerificationKey2019": "dif:OpenPgpVerificationKey2019",
+        "ethereumAddress": "dif:ethereumAddress"
       }
     }
   ]
