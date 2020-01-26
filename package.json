@@ -1,0 +1,30 @@
+{
+  "name": "context",
+  "version": "1.0.0",
+  "description": "This repo and website are designed to enable the most frictionless experience for developing software that relies on JSON-LD.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest --runInBand"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/decentralized-identity/context.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/decentralized-identity/context/issues"
+  },
+  "homepage": "https://github.com/decentralized-identity/context#readme",
+  "devDependencies": {
+    "crypto-ld": "^3.7.0",
+    "did-method-key": "^0.3.0",
+    "jest": "^25.1.0",
+    "jsonld": "^2.0.2",
+    "jsonld-signatures": "^4.6.0",
+    "node-fetch": "^2.6.0"
+  }
+}
