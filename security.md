@@ -312,11 +312,11 @@ Deprecated, do not use.
 
 <h4 id="equihashParameterK"><a href="#equihashParameterK">equihashParameterK</a></h4>
 
-Deprecated, do not use.
+See [equihash-signature](https://github.com/digitalbazaar/equihash-signature)
 
 <h4 id="equihashParameterN"><a href="#equihashParameterN">equihashParameterN</a></h4>
 
-Deprecated, do not use.
+See [equihash-signature](https://github.com/digitalbazaar/equihash-signature)
 
 <h4 id="invocationTarget"><a href="#invocationTarget">invocationTarget</a></h4>
 
@@ -338,9 +338,13 @@ Used with encrypted data vaults.
 
 See [did-key](https://did-key.web.app/)
 
+See [encrypted-data-vaults](https://digitalbazaar.github.io/encrypted-data-vaults/#datavaultconfiguration).
+
 <h4 id="kmsModule"><a href="#kmsModule">kmsModule</a></h4>
 
 Deprecated, do not use.
+
+See [webkms](https://digitalbazaar.github.io/webkms/#use-cases-and-requirements).
 
 <h4 id="parentCapability"><a href="#parentCapability">parentCapability</a></h4>
 
@@ -348,7 +352,9 @@ See [zcap-ld](https://w3c-ccg.github.io/zcap-ld/#parentCapability).
 
 <h4 id="plaintext"><a href="#plaintext">plaintext</a></h4>
 
-Deprecated, do not use.
+Data that is not encrypted. Either the input to an encryption or the output from a decryption.
+
+See [wikipedia](https://en.wikipedia.org/wiki/Plaintext).
 
 <h4 id="proof"><a href="#proof">proof</a></h4>
 
@@ -364,11 +370,15 @@ Deprecated, do not use.
 
 <h4 id="referenceId"><a href="#referenceId">referenceId</a></h4>
 
-Deprecated, do not use.
+Used to express an application-specific reference identifier. The value is optional and, if present MUST be a string.
+
+See [encrypted-data-vaults](https://digitalbazaar.github.io/encrypted-data-vaults/#datavaultconfiguration)
 
 <h4 id="unwrappedKey"><a href="#unwrappedKey">unwrappedKey</a></h4>
 
 Deprecated, do not use.
+
+See [webkms](https://digitalbazaar.github.io/webkms/)
 
 <h4 id="verifyData"><a href="#verifyData">verifyData</a></h4>
 
@@ -377,6 +387,8 @@ Deprecated, do not use.
 <h4 id="wrappedKey"><a href="#wrappedKey">wrappedKey</a></h4>
 
 Deprecated, do not use.
+
+See [webkms](https://digitalbazaar.github.io/webkms/#use-cases-and-requirements)
 
 <h4 id="EcdsaSecp256k1Signature2019"><a href="#EcdsaSecp256k1Signature2019">EcdsaSecp256k1Signature2019</a></h4>
 
