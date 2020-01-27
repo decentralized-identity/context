@@ -50,7 +50,7 @@ See [w3c-ccg](https://w3c-ccg.github.io/security-vocab/#cipherAlgorithm)
 
 <h4 id="cipherData"><a href="#cipherData">cipherData</a></h4>
 
-Cipher data an opaque blob of information that is used to specify an encrypted message.
+Cipher data is an opaque blob of information that is used to specify an encrypted message.
 
 See [w3c-ccg](https://w3c-ccg.github.io/security-vocab/#cipherData)
 
