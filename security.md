@@ -134,9 +134,11 @@ See [w3c-ccg](https://w3c-ccg.github.io/security-vocab/#publicKey).
 
 <h4 id="publicKeyBase58"><a href="#publicKeyBase58">publicKeyBase58</a></h4>
 
-You should use publicKeyJwk if possible.
+You should use publicKeyJwk if possible, because JWK is a valid key format for supported key types.
 
-See [did-core](https://w3c.github.io/did-core/#example-12-various-public-keys)
+See [did-core](https://w3c.github.io/did-core/#dfn-publickey).
+
+See [did-core publicKeyBase58 example](https://w3c.github.io/did-core/#example-12-various-public-keys)
 
 <h4 id="publicKeyPem"><a href="#publicKeyPem">publicKeyPem</a></h4>
 
