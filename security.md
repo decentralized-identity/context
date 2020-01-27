@@ -76,7 +76,7 @@ Deprecated, do not use.
 
 <h4 id="expiration"><a href="#expiration">expiration</a></h4>
 
-Deprecated, do not use.
+See [vc-data-model](https://www.w3.org/TR/vc-data-model/#expiration).
 
 <h4 id="expires"><a href="#expires">expires</a></h4>
 
@@ -104,6 +104,10 @@ See [w3c-ccg](https://w3c-ccg.github.io/security-vocab/#nonce)
 
 Deprecated, do not use.
 
+Also known as canonicalizationAlgorithm.
+
+See [w3c-ccg](https://w3c-ccg.github.io/security-vocab/#canonicalizationAlgorithm)
+
 <h4 id="password"><a href="#password">password</a></h4>
 
 A secret that is used to generate a key that can be used to encrypt or decrypt message. It is typically a string value.
@@ -130,7 +134,9 @@ See [w3c-ccg](https://w3c-ccg.github.io/security-vocab/#publicKey).
 
 <h4 id="publicKeyBase58"><a href="#publicKeyBase58">publicKeyBase58</a></h4>
 
-Deprecated, do not use.
+You should use publicKeyJwk if possible.
+
+See [did-core](https://w3c.github.io/did-core/#example-12-various-public-keys)
 
 <h4 id="publicKeyPem"><a href="#publicKeyPem">publicKeyPem</a></h4>
 
@@ -143,6 +149,8 @@ See [w3c-ccg](https://w3c-ccg.github.io/security-vocab/#publicKeyPem).
 <h4 id="publicKeyWif"><a href="#publicKeyWif">publicKeyWif</a></h4>
 
 Deprecated, do not use.
+
+See [lds-koblitz2016](https://w3c-dvcg.github.io/lds-koblitz2016/).
 
 <h4 id="publicKeyService"><a href="#publicKeyService">publicKeyService</a></h4>
 
@@ -178,71 +186,71 @@ See [w3c-ccg](https://w3c-ccg.github.io/security-vocab/#signatureAlgorithm).
 
 <h4 id="AesKeyWrappingKey2019"><a href="#AesKeyWrappingKey2019">AesKeyWrappingKey2019</a></h4>
 
-Deprecated, do not use.
+See [webkms](https://digitalbazaar.github.io/webkms/#ecosystem-overview)
 
 <h4 id="DeleteKeyOperation"><a href="#DeleteKeyOperation">DeleteKeyOperation</a></h4>
 
-Deprecated, do not use.
+See [webkms](https://digitalbazaar.github.io/webkms/#ecosystem-overview)
 
 <h4 id="DeriveSecretOperation"><a href="#DeriveSecretOperation">DeriveSecretOperation</a></h4>
 
-Deprecated, do not use.
+See [webkms](https://digitalbazaar.github.io/webkms/#ecosystem-overview)
 
 <h4 id="EquihashProof2018"><a href="#EquihashProof2018">EquihashProof2018</a></h4>
 
-Deprecated, do not use.
+See [equihash-signature](https://github.com/digitalbazaar/equihash-signature)
 
 <h4 id="ExportKeyOperation"><a href="#ExportKeyOperation">ExportKeyOperation</a></h4>
 
-Deprecated, do not use.
+See [webkms](https://digitalbazaar.github.io/webkms/#ecosystem-overview)
 
 <h4 id="GenerateKeyOperation"><a href="#GenerateKeyOperation">GenerateKeyOperation</a></h4>
 
-Deprecated, do not use.
+See [webkms](https://digitalbazaar.github.io/webkms/#ecosystem-overview)
 
 <h4 id="KmsOperation"><a href="#KmsOperation">KmsOperation</a></h4>
 
-Deprecated, do not use.
+See [webkms](https://digitalbazaar.github.io/webkms/#ecosystem-overview)
 
 <h4 id="RevokeKeyOperation"><a href="#RevokeKeyOperation">RevokeKeyOperation</a></h4>
 
-Deprecated, do not use.
+See [webkms](https://digitalbazaar.github.io/webkms/#ecosystem-overview)
 
 <h4 id="RsaSignature2018"><a href="#RsaSignature2018">RsaSignature2018</a></h4>
 
-Deprecated, do not use.
-
-[https://github.com/w3c-dvcg/lds-rsa2018](https://github.com/w3c-dvcg/lds-rsa2018)
+See [lds-rsa2018](https://github.com/w3c-dvcg/lds-rsa2018)
 
 <h4 id="RsaVerificationKey2018"><a href="#RsaVerificationKey2018">RsaVerificationKey2018</a></h4>
 
-Deprecated, do not use.
-
-[https://github.com/w3c-dvcg/lds-rsa2018](https://github.com/w3c-dvcg/lds-rsa2018)
+See [lds-rsa2018](https://github.com/w3c-dvcg/lds-rsa2018)
 
 <h4 id="Sha256HmacKey2019"><a href="#Sha256HmacKey2019">Sha256HmacKey2019</a></h4>
 
-Deprecated, do not use.
+See [encrypted-data-vaults](https://digitalbazaar.github.io/encrypted-data-vaults/#datavaultconfiguration).
+
+See [edv-client](https://github.com/digitalbazaar/edv-client/blob/master/tests/MockHmac.js#L22)
 
 <h4 id="SignOperation"><a href="#SignOperation">SignOperation</a></h4>
 
-Deprecated, do not use.
+See [webkms](https://digitalbazaar.github.io/webkms/#ecosystem-overview)
 
 <h4 id="UnwrapKeyOperation"><a href="#UnwrapKeyOperation">UnwrapKeyOperation</a></h4>
 
-Deprecated, do not use.
+See [webkms](https://digitalbazaar.github.io/webkms/#ecosystem-overview)
 
 <h4 id="VerifyOperation"><a href="#VerifyOperation">VerifyOperation</a></h4>
 
-Deprecated, do not use.
+See [webkms](https://digitalbazaar.github.io/webkms/#ecosystem-overview)
 
 <h4 id="WrapKeyOperation"><a href="#WrapKeyOperation">WrapKeyOperation</a></h4>
 
-Deprecated, do not use.
+See [webkms](https://digitalbazaar.github.io/webkms/#ecosystem-overview)
 
 <h4 id="X25519KeyAgreementKey2019"><a href="#X25519KeyAgreementKey2019">X25519KeyAgreementKey2019</a></h4>
 
 Deprecated, do not use.
+
+See [encrypted-data-vaults](https://digitalbazaar.github.io/encrypted-data-vaults/#datavaultconfiguration).
 
 <h4 id="allowedAction"><a href="#allowedAction">allowedAction</a></h4>
 
@@ -298,13 +306,21 @@ Used to prove control of a did. See [did-core](https://w3c.github.io/did-core/#p
 
 <h4 id="ciphertext"><a href="#ciphertext">ciphertext</a></h4>
 
-Deprecated, do not use.
+Data that is encrypted. The result of performing an encryption operation on plaintext.
+
+See [wikipedia](https://en.wikipedia.org/wiki/Ciphertext).
 
 <h4 id="controller"><a href="#controller">controller</a></h4>
 
 A URI describing a document used to control an Identitifier.
 
 See [did-core](https://w3c.github.io/did-core/#controller).
+
+See [vc-data-model](https://www.w3.org/TR/vc-data-model/#proofs-signatures-0).
+
+See [webkms](https://digitalbazaar.github.io/webkms/#ecosystem-overview)
+
+See [encrypted-data-vaults](https://digitalbazaar.github.io/encrypted-data-vaults/#datavaultconfiguration)
 
 <h4 id="delegator"><a href="#delegator">delegator</a></h4>
 
@@ -382,7 +398,9 @@ See [webkms](https://digitalbazaar.github.io/webkms/)
 
 <h4 id="verifyData"><a href="#verifyData">verifyData</a></h4>
 
-Deprecated, do not use.
+The input to a linked data signature signer method. This is the result of cannonicalization and hashing according to the linked data proof algorithm.
+
+See [ld-signatures](https://w3c-dvcg.github.io/ld-signatures/#create-verify-hash-algorithm).
 
 <h4 id="wrappedKey"><a href="#wrappedKey">wrappedKey</a></h4>
 
