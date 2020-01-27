@@ -12,11 +12,23 @@ const loadContext = relativePath => {
 };
 
 const contexts = {
+  "https://schema.org/": loadContext(
+    "./contexts/schema.org/jsonldcontext.jsonld"
+  ),
+
   "https://www.w3.org/ns/did/v1": loadContext(
     "./contexts/w3.org/did-v1.jsonld"
   ),
 
   "https://w3id.org/did/v1": loadContext("./contexts/w3id.org/did-v1.jsonld"),
+
+  "https://w3id.org/did/v0.11": loadContext(
+    "./contexts/w3id.org/did-v0.11.jsonld"
+  ),
+
+  "https://w3id.org/veres-one/v1": loadContext(
+    "./contexts/w3id.org/veres-one.jsonld"
+  ),
 
   "https://docs.element-did.com/contexts/sidetree/sidetree-v0.1.jsonld": loadContext(
     "./contexts/docs.element-did.com/sidetree-v0.1.jsonld"
