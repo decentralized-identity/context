@@ -7,12 +7,10 @@
         "usage": "dif:usage",
         "publicKeyHex": "dif:publicKeyHex",
         "publicKeyPgp": "dif:publicKeyPgp",
-        "publicKeyJwk": "dif:publicKeyJwk",
-        "crv": "dif:crv",
-        "kid": "dif:kid",
-        "kty": "dif:kty",
-        "x": "dif:x",
-        "y": "dif:y",
+        "publicKeyJwk": {
+          "@id": "dif:publicKeyJwk",
+          "@type": "@json"
+        },
         "OpenPgpSignature2019": "dif:OpenPgpSignature2019",
         "OpenPgpVerificationKey2019": "dif:OpenPgpVerificationKey2019",
         "ethereumAddress": "dif:ethereumAddress"
