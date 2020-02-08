@@ -27,5 +27,8 @@
     "jsonld": "^2.0.2",
     "jsonld-signatures": "^4.6.0",
     "node-fetch": "^2.6.0"
+  },
+  "dependencies": {
+    "jsonschema": "^1.2.5"
   }
 }

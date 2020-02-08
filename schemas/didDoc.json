@@ -1,0 +1,94 @@
+{
+  "$id": "/dif.didDocument",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "anyOf": [
+        { "type": "string" },
+        { "type": "array" },
+        { "type": "object" }
+      ],
+      "required": true
+    },
+    "id": {
+      "title": "DID",
+      "description": "The DID of the DID Document",
+      "type": "string",
+      "required": true,
+      "example": ["did:key:z6MksQ35B5bwZDQq4QKuhQW2Sv6dcqwg4PqcSFf67pdgrtjB"]
+    },
+    "publicKey": {
+      "title": "Public Key",
+      "description": "https://identity.foundation/context/security#publicKey",
+      "type": "array",
+      "required": true,
+      "items": {
+        "$ref": "dif.key"
+      }
+    },
+    "authentication": {
+      "title": "Authentication",
+      "description": "https://identity.foundation/context/security#authentication",
+      "type": "array",
+      "required": false,
+      "items": {
+        "anyOf": [{ "type": "string" }, { "$ref": "dif.key" }]
+      }
+    },
+    "assertionMethod": {
+      "title": "Assertion Method",
+      "description": "https://identity.foundation/context/security#assertionMethod",
+      "type": "array",
+      "required": false,
+      "items": {
+        "type": "string"
+      }
+    },
+    "capabilityDelegation": {
+      "title": "Capability Delegation",
+      "description": "https://identity.foundation/context/security#capabilityDelegation",
+      "type": "array",
+      "required": false,
+      "items": {
+        "type": "string"
+      }
+    },
+    "capabilityInvocation": {
+      "title": "Capability Invocation",
+      "description": "https://identity.foundation/context/security#capabilityInvocation",
+      "type": "array",
+      "required": false,
+      "items": {
+        "type": "string"
+      }
+    },
+    "keyAgreement": {
+      "title": "Key Agreement",
+      "description": "https://identity.foundation/context/security#keyAgreement",
+      "type": "array",
+      "required": false,
+      "items": {
+        "anyOf": [{ "type": "string" }, { "$ref": "dif.key" }]
+      }
+    },
+    "service": {
+      "title": "Service",
+      "description": "https://identity.foundation/context/security#service",
+      "type": "array",
+      "required": false,
+      "items": {
+        "$ref": "dif.service"
+      }
+    },
+    "proof": {
+      "title": "Proof",
+      "description": "https://identity.foundation/context/security#proof",
+      "type": "object",
+      "required": false,
+      "items": {
+        "$ref": "dif.proof"
+      }
+    }
+  },
+  "additionalProperties": false
+}

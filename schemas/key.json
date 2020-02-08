@@ -1,0 +1,93 @@
+{
+  "$id": "/dif.key",
+  "type": "object",
+  "properties": {
+    "id": {
+      "title": "Public Key ID",
+      "description": "The ID of the Public Key in a DID Document. Must be a URI.",
+      "type": "string",
+      "required": true,
+      "example": ["#primary", "#recovery"]
+    },
+    "type": {
+      "type": "string",
+      "required": true,
+      "enum": [
+        "Secp256k1VerificationKey2018",
+        "EcdsaSecp256k1VerificationKey2019",
+        "Ed25519VerificationKey2018",
+        "X25519KeyAgreementKey2019",
+        "OpenPgpVerificationKey2019",
+        "RsaVerificationKey2018"
+      ],
+      "example": ["Secp256k1VerificationKey2018"]
+    },
+    "owner": {
+      "title": "Owner",
+      "description": "https://identity.foundation/context/security#owner",
+      "type": "string",
+      "example": ["did:foo:bar"]
+    },
+    "controller": {
+      "title": "Controller",
+      "description": "https://identity.foundation/context/security#controller",
+      "type": "string",
+      "example": ["did:foo:bar"]
+    },
+    "usage": {
+      "title": "Usage",
+      "description": "https://identity.foundation/context/did-latest#usage",
+      "type": "string",
+      "enum": ["recovery", "signing"],
+      "example": ["recovery", "signing"]
+    },
+    "publicKeyHex": {
+      "title": "Public Key Hex",
+      "description": "https://identity.foundation/context/did-latest#publicKeyHex",
+      "type": "string",
+      "required": false,
+      "example": [
+        "025aad7a926a2c86f98b7687e1a6a8207aad49babc7d6f7d659f3e4304f980a124"
+      ]
+    },
+    "ethereumAddress": {
+      "title": "Ethereum Address",
+      "description": "https://identity.foundation/context/did-latest#ethereumAddress",
+      "type": "string",
+      "required": false,
+      "example": ["0x3b0BC51Ab9De1e5B7B6E34E5b960285805C41736"]
+    },
+    "publicKeyBase58": {
+      "title": "Public Key Base58",
+      "description": "https://identity.foundation/context/security#publicKeyBase58",
+      "type": "string",
+      "required": false,
+      "example": ["AYd6VGSqp5DTS5YknJfAQtobi2jmW3Yf1eodyMJMhvVV"]
+    },
+    "publicKeyPem": {
+      "title": "Public Key Pem",
+      "description": "https://identity.foundation/context/security#publicKeyPem",
+      "type": "string",
+      "required": false,
+      "example": [
+        "-----BEGIN PUBLIC KEY-----\nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA2FgP6ZzWXIPc3Ewl0Lfg\nib1XEHnlFbjXJ+id/PpfoKPIwBCwCGXi6Ux04NVFeUlagk94vSOkxhoZ+cfyvcBT\njnQeFxJyD4z60mmiAzYq6DUMTjW6x8823KMJd51PK3512N9ZAwIap+4JNYFXJt3V\n/ju2IfgGv2CusJmCrTsAe1pYM5WfvYG7W8GAeTUB6XGRjKOUIKxmGqyHekRhM4cd\nWdF0Smm68Zu6DULN3IpV/f7O9DUE55O+PSwZo8LIRyQE3dMufcY6/Pzv6uBdGi5Z\nHH3uchxoxwQMX2nmxEb/bSLtnH8r+j0ZkZHTfy7OE/k+rsWv223N3eTOrXzP1Gh5\n7seFaNLv+WclUggnX9OT1NZ7k9X2CgjgPg6swB/jeTxTIfO8gNM04RXwZmd8pxqL\n/pIILXKmAlusEv509bUsa0R6mFlJv/YRG8uCDv1dFLmnIYCajwjuUAUVwGcYvwuA\nVW+vn6Dl6vAT3EePqZseTBcaOE1t/VrmnGfJWe2GY2Jxdtfko7Wk3KhOF0SVyO+F\nP0cxt/24dcfqX88oBR9LzmrH2dm1JE4S1K8/r8qpBIBTToRAOlXuMvF010ckLSqb\nJ5QgnYYIHNlqUg6x0IkIsvvLYyBoWJeKXLinw0EwtqcL184sPpX0Q/NsudRoD8Hx\nQiuFKmtgYSV1d3mRERq4XCkCAwEAAQ==\n-----END PUBLIC KEY-----"
+      ]
+    },
+    "publicKeyJwk": {
+      "title": "Public Key JWK",
+      "description": "https://identity.foundation/context/security#publicKeyJwk",
+      "type": "object",
+      "required": false,
+      "example": [
+        {
+          "crv": "secp256k1",
+          "kid": "JUvpllMEYUZ2joO59UNui_XYDqxVqiFLLAJ8klWuPBw",
+          "kty": "EC",
+          "x": "dWCvM4fTdeM0KmloF57zxtBPXTOythHPMm1HCLrdd3A",
+          "y": "36uMVGM7hnw-N6GnjFcihWE3SkrhMLzzLCdPMXPEXlA"
+        }
+      ]
+    }
+  },
+  "additionalProperties": false
+}

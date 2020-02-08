@@ -7,10 +7,15 @@ let canSignAndVerify;
 const urConfig = require("./__fixtures__/universal-resolver/config.json");
 
 const methodsForTest = {};
+
+const focusedMethods = ["key", "ethr"];
+
 urConfig.drivers.forEach(driver => {
   if (driver.image !== "universalresolver/driver-dns") {
     const methodName = driver.pattern.split(":")[1];
-    methodsForTest[methodName] = driver.testIdentifiers;
+    if (focusedMethods.indexOf(methodName) !== -1) {
+      methodsForTest[methodName] = driver.testIdentifiers;
+    }
   }
 });
 
@@ -20,40 +25,7 @@ beforeEach(() => {
   canSignAndVerify = require("./__fixtures__/canSignAndVerify");
 });
 
-const makeDifTest = methodsForTest => {
-  describe("DIF Context", () => {
-    Object.keys(methodsForTest).map(method => {
-      describe(method, () => {
-        methodsForTest[method].forEach(did => {
-          it(did, async () => {
-            const { document } = await documentLoader(did, {
-              overwrite_did_context:
-                "https://identity.foundation/context/did-latest.jsonld"
-            });
-            await canSignAndVerify(document, "dif");
-          });
-        });
-      });
-    });
-  });
-};
-
-const makeDefaultTest = methodsForTest => {
-  describe("Default Context", () => {
-    Object.keys(methodsForTest).map(method => {
-      describe(method, () => {
-        methodsForTest[method].forEach(did => {
-          it(did, async () => {
-            const { document } = await documentLoader(did);
-            await canSignAndVerify(document, "default");
-          });
-        });
-      });
-    });
-  });
-};
-
-const makeW3Test = methodsForTest => {
+const makeW3TestJsonLd = methodsForTest => {
   describe("W3", () => {
     Object.keys(methodsForTest).map(method => {
       describe(method, () => {
@@ -73,6 +45,4 @@ const makeW3Test = methodsForTest => {
   });
 };
 
-makeDefaultTest(methodsForTest);
-makeW3Test(methodsForTest);
-makeDifTest(methodsForTest);
+makeW3TestJsonLd(methodsForTest);
