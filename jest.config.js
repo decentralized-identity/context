@@ -6,5 +6,14 @@ module.exports = {
   clearMocks: true,
   coverageDirectory: "coverage",
   testPathIgnorePatterns: ["<rootDir>/tests/__fixtures__/"],
-  coveragePathIgnorePatterns: ["<rootDir>/tests/__fixtures__/"]
+  coveragePathIgnorePatterns: ["<rootDir>/tests/__fixtures__/"],
+  reporters: [
+    "default",
+    [
+      "./node_modules/jest-html-reporter",
+      {
+        pageTitle: "Test Report"
+      }
+    ]
+  ]
 };

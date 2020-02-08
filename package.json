@@ -25,6 +25,7 @@
     "crypto-ld": "^3.7.0",
     "did-method-key": "^0.3.0",
     "jest": "^25.1.0",
+    "jest-html-reporter": "^2.8.0",
     "jsonld": "^2.0.2",
     "jsonld-signatures": "^4.6.0",
     "node-fetch": "^2.6.0"

@@ -1,0 +1,127 @@
+<html><head><meta charset="utf-8"/><title>Test Report</title><style type="text/css">html, body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1rem;
+	margin: 0;
+	padding: 0;
+	color: #333;
+}
+body {
+	padding: 1rem;
+	font-size: 0.85rem;
+}
+#jesthtml-content {
+	margin-bottom: 2rem;
+}
+header {
+	display: flex;
+	align-items: center;
+}
+#title {
+	margin: 0;
+	flex-grow: 1;
+}
+#logo {
+	height: 4rem;
+}
+#timestamp {
+	font-weight: bold;
+	color: #666;
+	margin-bottom: 0.5rem;
+}
+#summary {
+	color: #999;
+	margin-bottom: 1rem;
+}
+.suite-info {
+	padding: 1rem;
+	background-color: #eee;
+	border-bottom: 2px solid #999;
+	color: #999;
+	display: flex;
+	align-items: center;
+}
+.suite-info .suite-path {
+	font-weight: bold;
+	word-break: break-all;
+	flex-grow: 1;
+}
+.suite-info .suite-time {
+	margin-left: 0.5rem;
+	padding: 0.2rem 0.3rem;
+	font-size: 0.75rem;
+}
+.suite-info .suite-time.warn {
+	background-color: #D8000C;
+	color: #fff;
+}
+.suite-table {
+	width: 100%;
+	font-size: 0.85rem;
+	margin-bottom: 1em;
+}
+.suite-table td {
+	padding: 0.5rem;
+}
+.suite-table tr.passed {
+	background-color: #DFF2BF;
+	color: #4F8A10;
+}
+.suite-table tr.pending {
+	background-color: #FEEFB3;
+	color: #9F6000;
+}
+.suite-table tr.failed {
+	background-color: #FFBABA;
+	color: #D8000C;
+}
+.suite-table td {
+	font-size: 0.85rem;
+	border-bottom: 1px solid #aaa;
+	vertical-align: top;
+}
+.suite-table td.suite {
+	font-weight: bold;
+	width: 20%;
+}
+.suite-table td.test {
+	font-style: italic;
+	width: 60%;
+}
+.suite-table td.test .failureMsg {
+	font-size: 1rem;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+}
+.suite-table td.result {
+	width: 20%;
+	text-align: right;
+}
+
+/* CONSOLE LOGS */
+.suite-consolelog {
+	margin-bottom: 2rem;
+	padding: 1rem;
+	background-color: #efefef;
+}
+.suite-consolelog-header {
+	font-weight: bold;
+}
+.suite-consolelog-item {
+	padding: 0.5rem;
+}
+.suite-consolelog-item pre {
+	margin: 0;
+}
+.suite-consolelog-item-origin {
+	color: #777;
+	font-weight: bold;
+}
+.suite-consolelog-item-message {
+	color: #000;
+	font-size: 1rem;
+	padding: 0 0.5rem;
+}
+</style></head><body><div id="jesthtml-content"><header><h1 id="title">Test Report</h1></header><div id="metadata-container"><div id="timestamp">Start: 2020-02-08 12:50:48</div><div id="summary">92 tests -- 28 passed / 64 failed / 0 pending</div></div><div class="suite-info"><div class="suite-path">/Users/orie/Desktop/DIF/context/tests/interop-default-jsonld.spec.js</div><div class="suite-time">1.814s</div></div><table class="suite-table" cellspacing="0" cellpadding="0"><tr class="failed"><td class="suite">Default JSON-LD &gt; btcr</td><td class="test">did:btcr:xz35-jznz-q6mr-7q6</td><td class="result">failed</td></tr><tr class="failed"><td class="suite">Default JSON-LD &gt; btcr</td><td class="test">did:btcr:xkrn-xz7q-q0mx-4cl</td><td class="result">failed</td></tr><tr class="failed"><td class="suite">Default JSON-LD &gt; btcr</td><td class="test">did:btcr:x705-jznz-qwvq-0uw</td><td class="result">failed</td></tr><tr class="failed"><td class="suite">Default JSON-LD &gt; sov</td><td class="test">did:sov:WRfXPg8dantKVubE3HX8pw</td><td class="result">failed</td></tr><tr class="failed"><td class="suite">Default JSON-LD &gt; erc725</td><td class="test">did:erc725:ropsten:2F2B37C890824242Cb9B0FE5614fA2221B79901E</td><td class="result">failed</td></tr><tr class="passed"><td class="suite">Default JSON-LD &gt; v1</td><td class="test">did:v1:test:nym:z6MkuYhA5TN5XGyvFhjhLjBkJ19hY2HnQgwe7h5q1NkK5bjf</td><td class="result">passed in 0.064s</td></tr><tr class="passed"><td class="suite">Default JSON-LD &gt; v1</td><td class="test">did:v1:test:nym:z6MknhtcAH8sFkaZrweFpKF4yifrUyF2U6ej85WM87PhgSQ5</td><td class="result">passed in 0.06s</td></tr><tr class="failed"><td class="suite">Default JSON-LD &gt; ipid</td><td class="test">did:ipid:QmYA7p467t4BGgBL4NmyHtsXMoPrYH9b3kSG6dbgFYskJm</td><td class="result">failed</td></tr><tr class="failed"><td class="suite">Default JSON-LD &gt; stack</td><td class="test">did:stack:v0:16EMaNw3pkn3v6f2BgnSSs53zAKH4Q8YJg-0</td><td class="result">failed</td></tr><tr class="failed"><td class="suite">Default JSON-LD &gt; web</td><td class="test">did:web:uport.me</td><td class="result">failed</td></tr><tr class="failed"><td class="suite">Default JSON-LD &gt; ethr</td><td class="test">did:ethr:0x3b0BC51Ab9De1e5B7B6E34E5b960285805C41736</td><td class="result">failed</td></tr><tr class="failed"><td class="suite">Default JSON-LD &gt; nacl</td><td class="test">did:nacl:Md8JiMIwsapml_FtQ2ngnGftNP5UmVCAUuhnLyAsPxI</td><td class="result">failed</td></tr><tr class="failed"><td class="suite">Default JSON-LD &gt; jolo</td><td class="test">did:jolo:e76fb4b4900e43891f613066b9afca366c6d22f7d87fc9f78a91515be24dfb21</td><td class="result">failed</td></tr><tr class="failed"><td class="suite">Default JSON-LD &gt; hcr</td><td class="test">did:hcr:0f674e7e-4b49-4898-85f6-96176c1e30de</td><td class="result">failed</td></tr><tr class="passed"><td class="suite">Default JSON-LD &gt; elem</td><td class="test">did:elem:EiCcfb9tKepw7aCRlAp7mTHebJ4VNbTkMnVx78tyLNPY-A</td><td class="result">passed in 0.064s</td></tr><tr class="failed"><td class="suite">Default JSON-LD &gt; github</td><td class="test">did:github:gjgd</td><td class="result">failed</td></tr><tr class="failed"><td class="suite">Default JSON-LD &gt; neoid</td><td class="test">did:neoid:priv:b4eeeb80d20bfb38b23001d0659ce0c1d96be0aa</td><td class="result">failed</td></tr><tr class="failed"><td class="suite">Default JSON-LD &gt; ccp</td><td class="test">did:ccp:ceNobbK6Me9F5zwyE3MKY88QZLw</td><td class="result">failed</td></tr><tr class="failed"><td class="suite">Default JSON-LD &gt; ccp</td><td class="test">did:ccp:3CzQLF3qfFVQ1CjGVzVRZaFXrjAd</td><td class="result">failed</td></tr><tr class="failed"><td class="suite">Default JSON-LD &gt; work</td><td class="test">did:work:2UUHQCd4psvkPLZGnWY33L</td><td class="result">failed</td></tr><tr class="failed"><td class="suite">Default JSON-LD &gt; ont</td><td class="test">did:ont:AN5g6gz9EoQ3sCNu7514GEghZurrktCMiH</td><td class="result">failed</td></tr><tr class="failed"><td class="suite">Default JSON-LD &gt; key</td><td class="test">did:key:z6MksQ35B5bwZDQq4QKuhQW2Sv6dcqwg4PqcSFf67pdgrtjB</td><td class="result">failed</td></tr><tr class="failed"><td class="suite">Default JSON-LD &gt; kilt</td><td class="test">did:kilt:5CDct4QDpQYfAVDrskNuiEdXyiE38oPfTHEJ65ZLSpz9WasE</td><td class="result">failed</td></tr></table><div class="suite-info"><div class="suite-path">/Users/orie/Desktop/DIF/context/tests/interop-dif-jsonld.spec.js</div><div class="suite-time">1.197s</div></div><table class="suite-table" cellspacing="0" cellpadding="0"><tr class="passed"><td class="suite">DIF JSON-LD &gt; btcr</td><td class="test">did:btcr:xz35-jznz-q6mr-7q6</td><td class="result">passed in 0.058s</td></tr><tr class="failed"><td class="suite">DIF JSON-LD &gt; btcr</td><td class="test">did:btcr:xkrn-xz7q-q0mx-4cl</td><td class="result">failed</td></tr><tr class="failed"><td class="suite">DIF JSON-LD &gt; btcr</td><td class="test">did:btcr:x705-jznz-qwvq-0uw</td><td class="result">failed</td></tr><tr class="passed"><td class="suite">DIF JSON-LD &gt; sov</td><td class="test">did:sov:WRfXPg8dantKVubE3HX8pw</td><td class="result">passed in 0.064s</td></tr><tr class="passed"><td class="suite">DIF JSON-LD &gt; erc725</td><td class="test">did:erc725:ropsten:2F2B37C890824242Cb9B0FE5614fA2221B79901E</td><td class="result">passed in 0.06s</td></tr><tr class="passed"><td class="suite">DIF JSON-LD &gt; v1</td><td class="test">did:v1:test:nym:z6MkuYhA5TN5XGyvFhjhLjBkJ19hY2HnQgwe7h5q1NkK5bjf</td><td class="result">passed in 0.052s</td></tr><tr class="passed"><td class="suite">DIF JSON-LD &gt; v1</td><td class="test">did:v1:test:nym:z6MknhtcAH8sFkaZrweFpKF4yifrUyF2U6ej85WM87PhgSQ5</td><td class="result">passed in 0.062s</td></tr><tr class="failed"><td class="suite">DIF JSON-LD &gt; ipid</td><td class="test">did:ipid:QmYA7p467t4BGgBL4NmyHtsXMoPrYH9b3kSG6dbgFYskJm</td><td class="result">failed</td></tr><tr class="passed"><td class="suite">DIF JSON-LD &gt; stack</td><td class="test">did:stack:v0:16EMaNw3pkn3v6f2BgnSSs53zAKH4Q8YJg-0</td><td class="result">passed in 0.064s</td></tr><tr class="passed"><td class="suite">DIF JSON-LD &gt; web</td><td class="test">did:web:uport.me</td><td class="result">passed in 0.062s</td></tr><tr class="passed"><td class="suite">DIF JSON-LD &gt; ethr</td><td class="test">did:ethr:0x3b0BC51Ab9De1e5B7B6E34E5b960285805C41736</td><td class="result">passed in 0.064s</td></tr><tr class="failed"><td class="suite">DIF JSON-LD &gt; nacl</td><td class="test">did:nacl:Md8JiMIwsapml_FtQ2ngnGftNP5UmVCAUuhnLyAsPxI</td><td class="result">failed</td></tr><tr class="failed"><td class="suite">DIF JSON-LD &gt; jolo</td><td class="test">did:jolo:e76fb4b4900e43891f613066b9afca366c6d22f7d87fc9f78a91515be24dfb21</td><td class="result">failed</td></tr><tr class="passed"><td class="suite">DIF JSON-LD &gt; hcr</td><td class="test">did:hcr:0f674e7e-4b49-4898-85f6-96176c1e30de</td><td class="result">passed in 0.056s</td></tr><tr class="passed"><td class="suite">DIF JSON-LD &gt; elem</td><td class="test">did:elem:EiCcfb9tKepw7aCRlAp7mTHebJ4VNbTkMnVx78tyLNPY-A</td><td class="result">passed in 0.06s</td></tr><tr class="failed"><td class="suite">DIF JSON-LD &gt; github</td><td class="test">did:github:gjgd</td><td class="result">failed</td></tr><tr class="passed"><td class="suite">DIF JSON-LD &gt; neoid</td><td class="test">did:neoid:priv:b4eeeb80d20bfb38b23001d0659ce0c1d96be0aa</td><td class="result">passed in 0.058s</td></tr><tr class="failed"><td class="suite">DIF JSON-LD &gt; ccp</td><td class="test">did:ccp:ceNobbK6Me9F5zwyE3MKY88QZLw</td><td class="result">failed</td></tr><tr class="failed"><td class="suite">DIF JSON-LD &gt; ccp</td><td class="test">did:ccp:3CzQLF3qfFVQ1CjGVzVRZaFXrjAd</td><td class="result">failed</td></tr><tr class="passed"><td class="suite">DIF JSON-LD &gt; work</td><td class="test">did:work:2UUHQCd4psvkPLZGnWY33L</td><td class="result">passed in 0.057s</td></tr><tr class="passed"><td class="suite">DIF JSON-LD &gt; ont</td><td class="test">did:ont:AN5g6gz9EoQ3sCNu7514GEghZurrktCMiH</td><td class="result">passed in 0.052s</td></tr><tr class="passed"><td class="suite">DIF JSON-LD &gt; key</td><td class="test">did:key:z6MksQ35B5bwZDQq4QKuhQW2Sv6dcqwg4PqcSFf67pdgrtjB</td><td class="result">passed in 0.057s</td></tr><tr class="failed"><td class="suite">DIF JSON-LD &gt; kilt</td><td class="test">did:kilt:5CDct4QDpQYfAVDrskNuiEdXyiE38oPfTHEJ65ZLSpz9WasE</td><td class="result">failed</td></tr></table><div class="suite-info"><div class="suite-path">/Users/orie/Desktop/DIF/context/tests/interop-w3c-jsonld.spec.js</div><div class="suite-time">1.063s</div></div><table class="suite-table" cellspacing="0" cellpadding="0"><tr class="failed"><td class="suite">W3 JSON-LD &gt; btcr</td><td class="test">did:btcr:xz35-jznz-q6mr-7q6</td><td class="result">failed</td></tr><tr class="failed"><td class="suite">W3 JSON-LD &gt; btcr</td><td class="test">did:btcr:xkrn-xz7q-q0mx-4cl</td><td class="result">failed</td></tr><tr class="failed"><td class="suite">W3 JSON-LD &gt; btcr</td><td class="test">did:btcr:x705-jznz-qwvq-0uw</td><td class="result">failed</td></tr><tr class="passed"><td class="suite">W3 JSON-LD &gt; sov</td><td class="test">did:sov:WRfXPg8dantKVubE3HX8pw</td><td class="result">passed in 0.053s</td></tr><tr class="failed"><td class="suite">W3 JSON-LD &gt; erc725</td><td class="test">did:erc725:ropsten:2F2B37C890824242Cb9B0FE5614fA2221B79901E</td><td class="result">failed</td></tr><tr class="passed"><td class="suite">W3 JSON-LD &gt; v1</td><td class="test">did:v1:test:nym:z6MkuYhA5TN5XGyvFhjhLjBkJ19hY2HnQgwe7h5q1NkK5bjf</td><td class="result">passed in 0.059s</td></tr><tr class="passed"><td class="suite">W3 JSON-LD &gt; v1</td><td class="test">did:v1:test:nym:z6MknhtcAH8sFkaZrweFpKF4yifrUyF2U6ej85WM87PhgSQ5</td><td class="result">passed in 0.061s</td></tr><tr class="failed"><td class="suite">W3 JSON-LD &gt; ipid</td><td class="test">did:ipid:QmYA7p467t4BGgBL4NmyHtsXMoPrYH9b3kSG6dbgFYskJm</td><td class="result">failed</td></tr><tr class="failed"><td class="suite">W3 JSON-LD &gt; stack</td><td class="test">did:stack:v0:16EMaNw3pkn3v6f2BgnSSs53zAKH4Q8YJg-0</td><td class="result">failed</td></tr><tr class="failed"><td class="suite">W3 JSON-LD &gt; web</td><td class="test">did:web:uport.me</td><td class="result">failed</td></tr><tr class="failed"><td class="suite">W3 JSON-LD &gt; ethr</td><td class="test">did:ethr:0x3b0BC51Ab9De1e5B7B6E34E5b960285805C41736</td><td class="result">failed</td></tr><tr class="failed"><td class="suite">W3 JSON-LD &gt; nacl</td><td class="test">did:nacl:Md8JiMIwsapml_FtQ2ngnGftNP5UmVCAUuhnLyAsPxI</td><td class="result">failed</td></tr><tr class="failed"><td class="suite">W3 JSON-LD &gt; jolo</td><td class="test">did:jolo:e76fb4b4900e43891f613066b9afca366c6d22f7d87fc9f78a91515be24dfb21</td><td class="result">failed</td></tr><tr class="passed"><td class="suite">W3 JSON-LD &gt; hcr</td><td class="test">did:hcr:0f674e7e-4b49-4898-85f6-96176c1e30de</td><td class="result">passed in 0.058s</td></tr><tr class="failed"><td class="suite">W3 JSON-LD &gt; elem</td><td class="test">did:elem:EiCcfb9tKepw7aCRlAp7mTHebJ4VNbTkMnVx78tyLNPY-A</td><td class="result">failed</td></tr><tr class="failed"><td class="suite">W3 JSON-LD &gt; github</td><td class="test">did:github:gjgd</td><td class="result">failed</td></tr><tr class="failed"><td class="suite">W3 JSON-LD &gt; neoid</td><td class="test">did:neoid:priv:b4eeeb80d20bfb38b23001d0659ce0c1d96be0aa</td><td class="result">failed</td></tr><tr class="failed"><td class="suite">W3 JSON-LD &gt; ccp</td><td class="test">did:ccp:ceNobbK6Me9F5zwyE3MKY88QZLw</td><td class="result">failed</td></tr><tr class="failed"><td class="suite">W3 JSON-LD &gt; ccp</td><td class="test">did:ccp:3CzQLF3qfFVQ1CjGVzVRZaFXrjAd</td><td class="result">failed</td></tr><tr class="passed"><td class="suite">W3 JSON-LD &gt; work</td><td class="test">did:work:2UUHQCd4psvkPLZGnWY33L</td><td class="result">passed in 0.051s</td></tr><tr class="failed"><td class="suite">W3 JSON-LD &gt; ont</td><td class="test">did:ont:AN5g6gz9EoQ3sCNu7514GEghZurrktCMiH</td><td class="result">failed</td></tr><tr class="passed"><td class="suite">W3 JSON-LD &gt; key</td><td class="test">did:key:z6MksQ35B5bwZDQq4QKuhQW2Sv6dcqwg4PqcSFf67pdgrtjB</td><td class="result">passed in 0.056s</td></tr><tr class="failed"><td class="suite">W3 JSON-LD &gt; kilt</td><td class="test">did:kilt:5CDct4QDpQYfAVDrskNuiEdXyiE38oPfTHEJ65ZLSpz9WasE</td><td class="result">failed</td></tr></table><div class="suite-info"><div class="suite-path">/Users/orie/Desktop/DIF/context/tests/interop-dif-json-schema.spec.js</div><div class="suite-time">0.146s</div></div><table class="suite-table" cellspacing="0" cellpadding="0"><tr class="failed"><td class="suite">DIF JSON Schema &gt; btcr</td><td class="test">did:btcr:xz35-jznz-q6mr-7q6</td><td class="result">failed</td></tr><tr class="failed"><td class="suite">DIF JSON Schema &gt; btcr</td><td class="test">did:btcr:xkrn-xz7q-q0mx-4cl</td><td class="result">failed</td></tr><tr class="failed"><td class="suite">DIF JSON Schema &gt; btcr</td><td class="test">did:btcr:x705-jznz-qwvq-0uw</td><td class="result">failed</td></tr><tr class="failed"><td class="suite">DIF JSON Schema &gt; sov</td><td class="test">did:sov:WRfXPg8dantKVubE3HX8pw</td><td class="result">failed</td></tr><tr class="failed"><td class="suite">DIF JSON Schema &gt; erc725</td><td class="test">did:erc725:ropsten:2F2B37C890824242Cb9B0FE5614fA2221B79901E</td><td class="result">failed</td></tr><tr class="failed"><td class="suite">DIF JSON Schema &gt; v1</td><td class="test">did:v1:test:nym:z6MkuYhA5TN5XGyvFhjhLjBkJ19hY2HnQgwe7h5q1NkK5bjf</td><td class="result">failed</td></tr><tr class="failed"><td class="suite">DIF JSON Schema &gt; v1</td><td class="test">did:v1:test:nym:z6MknhtcAH8sFkaZrweFpKF4yifrUyF2U6ej85WM87PhgSQ5</td><td class="result">failed</td></tr><tr class="failed"><td class="suite">DIF JSON Schema &gt; ipid</td><td class="test">did:ipid:QmYA7p467t4BGgBL4NmyHtsXMoPrYH9b3kSG6dbgFYskJm</td><td class="result">failed</td></tr><tr class="passed"><td class="suite">DIF JSON Schema &gt; stack</td><td class="test">did:stack:v0:16EMaNw3pkn3v6f2BgnSSs53zAKH4Q8YJg-0</td><td class="result">passed in 0.001s</td></tr><tr class="failed"><td class="suite">DIF JSON Schema &gt; web</td><td class="test">did:web:uport.me</td><td class="result">failed</td></tr><tr class="failed"><td class="suite">DIF JSON Schema &gt; ethr</td><td class="test">did:ethr:0x3b0BC51Ab9De1e5B7B6E34E5b960285805C41736</td><td class="result">failed</td></tr><tr class="failed"><td class="suite">DIF JSON Schema &gt; nacl</td><td class="test">did:nacl:Md8JiMIwsapml_FtQ2ngnGftNP5UmVCAUuhnLyAsPxI</td><td class="result">failed</td></tr><tr class="failed"><td class="suite">DIF JSON Schema &gt; jolo</td><td class="test">did:jolo:e76fb4b4900e43891f613066b9afca366c6d22f7d87fc9f78a91515be24dfb21</td><td class="result">failed</td></tr><tr class="failed"><td class="suite">DIF JSON Schema &gt; hcr</td><td class="test">did:hcr:0f674e7e-4b49-4898-85f6-96176c1e30de</td><td class="result">failed</td></tr><tr class="passed"><td class="suite">DIF JSON Schema &gt; elem</td><td class="test">did:elem:EiCcfb9tKepw7aCRlAp7mTHebJ4VNbTkMnVx78tyLNPY-A</td><td class="result">passed in 0.003s</td></tr><tr class="passed"><td class="suite">DIF JSON Schema &gt; github</td><td class="test">did:github:gjgd</td><td class="result">passed in 0.001s</td></tr><tr class="failed"><td class="suite">DIF JSON Schema &gt; neoid</td><td class="test">did:neoid:priv:b4eeeb80d20bfb38b23001d0659ce0c1d96be0aa</td><td class="result">failed</td></tr><tr class="failed"><td class="suite">DIF JSON Schema &gt; ccp</td><td class="test">did:ccp:ceNobbK6Me9F5zwyE3MKY88QZLw</td><td class="result">failed</td></tr><tr class="failed"><td class="suite">DIF JSON Schema &gt; ccp</td><td class="test">did:ccp:3CzQLF3qfFVQ1CjGVzVRZaFXrjAd</td><td class="result">failed</td></tr><tr class="passed"><td class="suite">DIF JSON Schema &gt; work</td><td class="test">did:work:2UUHQCd4psvkPLZGnWY33L</td><td class="result">passed in 0.001s</td></tr><tr class="failed"><td class="suite">DIF JSON Schema &gt; ont</td><td class="test">did:ont:AN5g6gz9EoQ3sCNu7514GEghZurrktCMiH</td><td class="result">failed</td></tr><tr class="passed"><td class="suite">DIF JSON Schema &gt; key</td><td class="test">did:key:z6MksQ35B5bwZDQq4QKuhQW2Sv6dcqwg4PqcSFf67pdgrtjB</td><td class="result">passed in 0.001s</td></tr><tr class="failed"><td class="suite">DIF JSON Schema &gt; kilt</td><td class="test">did:kilt:5CDct4QDpQYfAVDrskNuiEdXyiE38oPfTHEJ65ZLSpz9WasE</td><td class="result">failed</td></tr></table></div></body></html>

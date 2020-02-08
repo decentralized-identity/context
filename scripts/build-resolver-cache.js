@@ -4,8 +4,6 @@ const shell = require("shelljs");
 const getMethodsForTest = require("../tests/__fixtures__/getMethodsForTest");
 
 let focusedMethods = require("../tests/__fixtures__/focusedMethods");
-// build cache for all..
-focusedMethods = [];
 const methodsForTest = getMethodsForTest(focusedMethods);
 
 // Run locally before push to decrease build time.
@@ -21,7 +19,8 @@ const buildResolverCache = methodsForTest => {
         curl -s https://uniresolver.io/1.0/identifiers/${did} | jq ".didDocument" > ./dids/${did}.json;
       `;
         shell.config.silent = false;
-        shell.exec(cmd);
+        const res = shell.exec(cmd);
+        console.log(res);
       } else {
         console.info("skipping: ", did);
       }

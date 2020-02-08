@@ -1,0 +1,76 @@
+{
+  "keyAgreement": [
+    {
+      "type": "X25519KeyAgreementKey2019",
+      "publicKeyBase58": "CLzmRpEvYuvo636ypqJRD7vAWWFW5wekPgE3uaeoWAQk",
+      "id": "#keyAgreement",
+      "usage": "signing",
+      "controller": "did:elem:EiCcfb9tKepw7aCRlAp7mTHebJ4VNbTkMnVx78tyLNPY-A"
+    }
+  ],
+  "assertionMethod": [
+    "#OMDq1OTlEl0VzqVyaIEFNpqUYngo_tYJvr3WPm1_NOk",
+    "#primary",
+    "#recovery",
+    "#PGv5JGYM0LZKkURwVzBx81aHoT2UFFekPbrkU2a_Xj0"
+  ],
+  "@context": [
+    "https://www.w3.org/ns/did/v1",
+    "https://docs.element-did.com/contexts/sidetree/sidetree-v0.1.jsonld"
+  ],
+  "publicKey": [
+    {
+      "publicKeyJwk": {
+        "x": "PEjkPQtwlE78C246GGgKr_rOdV9J3A03-Dh93ivNCuc",
+        "kty": "EC",
+        "crv": "secp256k1",
+        "y": "06YbI7cnX5zqPlwsLLdD8Ztq7U80AiaM-VK0rx3yhR8",
+        "kid": "OMDq1OTlEl0VzqVyaIEFNpqUYngo_tYJvr3WPm1_NOk"
+      },
+      "type": "EcdsaSecp256k1VerificationKey2019",
+      "id": "#OMDq1OTlEl0VzqVyaIEFNpqUYngo_tYJvr3WPm1_NOk",
+      "usage": "signing",
+      "controller": "did:elem:EiCcfb9tKepw7aCRlAp7mTHebJ4VNbTkMnVx78tyLNPY-A"
+    },
+    {
+      "publicKeyHex": "033c48e43d0b70944efc0b6e3a18680aafface755f49dc0d37f8387dde2bcd0ae7",
+      "type": "EcdsaSecp256k1VerificationKey2019",
+      "id": "#primary",
+      "usage": "signing",
+      "controller": "did:elem:EiCcfb9tKepw7aCRlAp7mTHebJ4VNbTkMnVx78tyLNPY-A"
+    },
+    {
+      "publicKeyHex": "037d88392c7355dace4f06b471aee3de3695ec93bba2b358abc8207ddd5d7773ac",
+      "type": "EcdsaSecp256k1VerificationKey2019",
+      "id": "#recovery",
+      "usage": "recovery",
+      "controller": "did:elem:EiCcfb9tKepw7aCRlAp7mTHebJ4VNbTkMnVx78tyLNPY-A"
+    },
+    {
+      "id": "#PGv5JGYM0LZKkURwVzBx81aHoT2UFFekPbrkU2a_Xj0",
+      "usage": "signing",
+      "type": "Ed25519VerificationKey2018",
+      "publicKeyBase58": "CmPkgqyW6563Nu1hr3Ub3PkMmxJeG7ykZ1PkHneq1V5E",
+      "controller": "did:elem:EiCcfb9tKepw7aCRlAp7mTHebJ4VNbTkMnVx78tyLNPY-A"
+    }
+  ],
+  "capabilityInvocation": [
+    "#OMDq1OTlEl0VzqVyaIEFNpqUYngo_tYJvr3WPm1_NOk",
+    "#primary",
+    "#recovery",
+    "#PGv5JGYM0LZKkURwVzBx81aHoT2UFFekPbrkU2a_Xj0"
+  ],
+  "authentication": [
+    "#OMDq1OTlEl0VzqVyaIEFNpqUYngo_tYJvr3WPm1_NOk",
+    "#primary",
+    "#recovery",
+    "#PGv5JGYM0LZKkURwVzBx81aHoT2UFFekPbrkU2a_Xj0"
+  ],
+  "capabilityDelegation": [
+    "#OMDq1OTlEl0VzqVyaIEFNpqUYngo_tYJvr3WPm1_NOk",
+    "#primary",
+    "#recovery",
+    "#PGv5JGYM0LZKkURwVzBx81aHoT2UFFekPbrkU2a_Xj0"
+  ],
+  "id": "did:elem:EiCcfb9tKepw7aCRlAp7mTHebJ4VNbTkMnVx78tyLNPY-A"
+}

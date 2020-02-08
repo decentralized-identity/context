@@ -28,3 +28,11 @@ We are aiming to cover 100% of the vocabulary used by:
 #### [DID Latest](https://identity.foundation/context/did-latest)
 
 This context defines all vocabularly used with decentralized identifiers. This includes terms used by verifiable credentials.
+
+### Testing Interoperability
+
+You can test interoperability for a single did method like this:
+
+```
+DID_METHOD='key' npm run test
+```
