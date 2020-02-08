@@ -1,8 +1,14 @@
 #### [View GitHub](https://github.com/decentralized-identity/context)
 
-[![Build Status](https://travis-ci.org/decentralized-identity/context.svg?branch=master)](https://travis-ci.org/decentralized-identity/context)
+![](https://github.com/decentralized-identity/context/workflows/DIF%20JSON-LD/badge.svg)
 
-This repo and website are designed to enable the most frictionless experience for developing software that relies on JSON-LD.
+![](https://github.com/decentralized-identity/context/workflows/DIF%20JSON%20Schema/badge.svg)
+
+![](https://github.com/decentralized-identity/context/workflows/W3C%20JSON-LD/badge.svg)
+
+![](https://github.com/decentralized-identity/context/workflows/Default%20JSON-LD/badge.svg)
+
+This repo and website are designed to enable the most frictionless experience for developing software that relies on JSON-LD and JSON-Schema.
 
 By default, any undocumented property will be labled as deprecated, do not use.
 

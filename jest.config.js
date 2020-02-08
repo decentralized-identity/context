@@ -5,6 +5,6 @@ module.exports = {
   // Automatically clear mock calls and instances between every test
   clearMocks: true,
   coverageDirectory: "coverage",
-  testPathIgnorePatterns: ["<rootDir>/tests/__fixtures__/"]
-  // testEnvironment: "node"
+  testPathIgnorePatterns: ["<rootDir>/tests/__fixtures__/"],
+  coveragePathIgnorePatterns: ["<rootDir>/tests/__fixtures__/"]
 };
