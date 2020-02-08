@@ -7,8 +7,9 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "jest --runInBand --verbose",
-    "coverage": "jest --runInBand --verbose --coverage"
+    "build-cache": "node ./scripts/build-resolver-cache.js",
+    "test": "jest --runInBand --forceExit --verbose",
+    "coverage": "jest --runInBand --forceExit --verbose --coverage"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,7 @@
     "node-fetch": "^2.6.0"
   },
   "dependencies": {
-    "jsonschema": "^1.2.5"
+    "jsonschema": "^1.2.5",
+    "shelljs": "^0.8.3"
   }
 }

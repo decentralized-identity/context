@@ -1,4 +1,6 @@
 const fetch = require("node-fetch");
+const fs = require("fs");
+const path = require("path");
 const didKeyDriver = require("did-method-key").driver();
 
 const convertFragmentsToURIs = require("./convertFragmentsToURIs");
@@ -47,6 +49,15 @@ const normalizeDocument = res => {
 
 const resolver = {
   resolve: async (didUri, options) => {
+    try {
+      const file = fs.readFileSync(
+        path.resolve(__dirname, `../../dids/${didUri}.json`)
+      );
+      const document = JSON.parse(file.toString());
+      return document;
+    } catch (e) {
+      throw Error("cache miss for: " + didUri + " assuming unresolvable.");
+    }
     try {
       const didMethod = didUri
         .split(":")
