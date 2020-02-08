@@ -5,7 +5,7 @@ const documentLoader = require("./__fixtures__/documentLoader");
 const getMethodsForTest = require("./__fixtures__/getMethodsForTest");
 
 let focusedMethods = [];
-focusedMethods = ["key", "ethr"];
+// focusedMethods = ["key", "ethr"];
 const methodsForTest = getMethodsForTest(focusedMethods);
 
 beforeEach(() => {

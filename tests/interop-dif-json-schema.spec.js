@@ -6,7 +6,7 @@ const getMethodsForTest = require("./__fixtures__/getMethodsForTest");
 const schema = require("../schemas");
 
 let focusedMethods = [];
-focusedMethods = ["key", "ethr"];
+// focusedMethods = ["key", "ethr"];
 const methodsForTest = getMethodsForTest(focusedMethods);
 
 beforeEach(() => {
