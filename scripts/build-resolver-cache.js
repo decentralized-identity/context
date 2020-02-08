@@ -6,26 +6,46 @@ const getMethodsForTest = require("../tests/__fixtures__/getMethodsForTest");
 let focusedMethods = require("../tests/__fixtures__/focusedMethods");
 const methodsForTest = getMethodsForTest(focusedMethods);
 
+const unresolveable = [];
+
 // Run locally before push to decrease build time.
 const buildResolverCache = methodsForTest => {
   Object.keys(methodsForTest).map(method => {
     methodsForTest[method].forEach(did => {
-      const exists = fs.existsSync(
-        path.resolve(__dirname, `../dids/${did}.json`)
-      );
-      if (!exists) {
-        console.info("downloading: ", did);
-        const cmd = `
-        curl -s https://uniresolver.io/1.0/identifiers/${did} | jq ".didDocument" > ./dids/${did}.json;
-      `;
-        shell.config.silent = false;
-        const res = shell.exec(cmd);
-        console.log(res);
-      } else {
-        console.info("skipping: ", did);
+      let exists = false;
+
+      try {
+        try {
+          const file = fs.readFileSync(
+            path.resolve(__dirname, `../dids/${did}.json`)
+          );
+          const document = JSON.parse(file.toString());
+          exists = document != null && typeof document.id === "string";
+        } catch (e) {
+          exists = false;
+          unresolveable.push(did);
+        }
+
+        if (!exists) {
+          console.info("downloading: ", did);
+          const cmd = `
+          curl -s --max-time 10 https://uniresolver.io/1.0/identifiers/${did} | jq ".didDocument" > ./dids/${did}.json;
+        `;
+          shell.config.silent = false;
+          shell.exec(cmd);
+        } else {
+          console.info(did, " is valid json, skipping.");
+        }
+      } catch (e) {
+        console.warn(did, e);
       }
     });
   });
 };
 
 buildResolverCache(methodsForTest);
+
+fs.writeFileSync(
+  path.resolve(__dirname, "../unresolveable.json"),
+  JSON.stringify(unresolveable, null, 2)
+);
