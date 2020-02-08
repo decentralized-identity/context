@@ -23,10 +23,11 @@ const buildResolverCache = methodsForTest => {
           exists = document != null && typeof document.id === "string";
         } catch (e) {
           exists = false;
-          unresolveable.push(did);
         }
 
         if (!exists) {
+          // assume unresolvable...
+          unresolveable.push(did);
           console.info("downloading: ", did);
           const cmd = `
           curl -s --max-time 10 https://uniresolver.io/1.0/identifiers/${did} | jq ".didDocument" > ./dids/${did}.json;
