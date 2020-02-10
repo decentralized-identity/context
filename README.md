@@ -19,13 +19,9 @@ We are aiming to cover 100% of the vocabulary used by:
 
 ### Contexts
 
-#### [Security v1](https://identity.foundation/context/security-v1)
+#### [Security v1 & v2](https://identity.foundation/context/security)
 
-#### [Security v2](https://identity.foundation/context/security-v1)
-
-#### [DID v1](https://identity.foundation/context/did-v1)
-
-#### [DID Latest](https://identity.foundation/context/did-latest)
+#### [DID v1 & Latest](https://identity.foundation/context/did-latest)
 
 This context defines all vocabularly used with decentralized identifiers. This includes terms used by verifiable credentials.
 
