@@ -17,7 +17,7 @@ We are aiming to cover 100% of the vocabulary used by:
 - https://www.w3.org/ns/did/v1
 - https://www.w3.org/2018/credentials/v1
 
-### Contexts
+### Human Readable Documentation
 
 #### [Security v1 & v2](https://identity.foundation/context/security)
 
