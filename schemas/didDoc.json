@@ -21,7 +21,7 @@
       "title": "Public Key",
       "description": "https://identity.foundation/context/security#publicKey",
       "type": "array",
-      "required": true,
+      "required": false,
       "items": {
         "$ref": "dif.key"
       }
@@ -41,7 +41,14 @@
       "type": "array",
       "required": false,
       "items": {
-        "type": "string"
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "$ref": "dif.key"
+          }
+        ]
       }
     },
     "capabilityDelegation": {
@@ -50,7 +57,14 @@
       "type": "array",
       "required": false,
       "items": {
-        "type": "string"
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "$ref": "dif.key"
+          }
+        ]
       }
     },
     "capabilityInvocation": {
@@ -59,7 +73,14 @@
       "type": "array",
       "required": false,
       "items": {
-        "type": "string"
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "$ref": "dif.key"
+          }
+        ]
       }
     },
     "keyAgreement": {
