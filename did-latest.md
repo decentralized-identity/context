@@ -105,8 +105,8 @@ The name of the public key type used by OpenPgpSignature2019. This value will be
 ```json
 {
   "type": "OpenPgpVerificationKey2019",
-  "id": "did:btcr:xxcl-lzpq-q83a-0d5#yubikey",
-  "controller": "did:btcr:xxcl-lzpq-q83a-0d5",
+  "id": "did:btcr:xxcl-lzpq-qcwz-sj2#yubikey",
+  "controller": "did:btcr:xxcl-lzpq-qcwz-sj2",
   "publicKeyPgp": "\n-----BEGIN PGP PUBLIC KEY BLOCK-----\nComment: GPGTools - https://gpgtools.org\n\nmQENBF1N1CwBCADaCb/PSbxcxNf8baK6J2h1sKIAOX+Yoq4yOx+bCvrzYXV5/Noz\nVCTaVvZUNQa745K6VSW/tQl9FtJ7zFi7D/5w8ZBAzdBeYkNWhWSZ6vTgUplAxtUp\nOnzijDIvEXDYk8Ab...\n-----END PGP PUBLIC KEY BLOCK-----"
 }
 ```
@@ -124,7 +124,7 @@ when it contains a proof field with type `OpenPgpSignature2019`.
   "http://schema.org/action": "AuthenticateMe",
   "proof": {
     "type": "OpenPgpSignature2019",
-    "verificationMethod": "did:btcr:xxcl-lzpq-q83a-0d5#yubikey",
+    "verificationMethod": "did:btcr:xxcl-lzpq-qcwz-sj2#yubikey",
     "proofPurpose": "assertionMethod",
     "created": "2019-08-11T03:54:13.310Z",
     "signatureValue": "-----BEGIN PGP SIGNATURE-----\nComment: GPGTools - https://gpgtools.org\n\niQEzBAABCgAdFiEE8b0S9xIG+...\n-----END PGP SIGNATURE-----\n"
