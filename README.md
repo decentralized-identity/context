@@ -1,3 +1,6 @@
+
+### This repo is no longer maintained, see [w3c/did-spec-registries](https://github.com/w3c/did-spec-registries)
+
 #### [View GitHub](https://github.com/decentralized-identity/context)
 
 ![](https://github.com/decentralized-identity/context/workflows/DIF%20JSON-LD/badge.svg)
